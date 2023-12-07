@@ -8,27 +8,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+   <!--This Is For Background Music--> 
+    <audio id="song">
+        <source src="FIFTY FIFTY - Cupid (Twin Version) (Lyrics).mp3">
+    </audio>
+    
+    <script>
+        window.addEventListener('click', () => {
+            document.getElementById("song").play();
+        });
+    </script>
 
+   <!--This Is For Home, About, Features, And Contact--> 
     <div class="container min-h-screen bg-[url('image.jpg')] bg-center bg-cover px-28 py-5 relative">
         <nav class="flex items-center">
             <ul class="flex-1 text-center">
-              <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Home</a></li>
+              <li class="list-none inline-block px-5"><a href="https://fti.unai.edu" class="no-underline text-white px-2">Home</a></li>
               <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">About</a></li>
               <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Features</a></li>
               <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Contact</a></li>  
             </ul>
         </nav>
 
+   <!--For Paragraph-->     
         <div class="text-white mt-48 max-w-xl"> 
             <h1 class="text-6xl font-semibold leading-normal">Welcome To My Website<br>You Want To Know 
             <span class="font-light">Me Better?...</span></h1>
             <p>Press The Button On Top In This Website.</p>
-        
+   <!--For Youtube And Instagram-->     
     <div class="mt-10">
         <a href="#" class="bg-red-500 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border border-transparent">My Youtube</a>
         <a href="#" class="bg-purple-500 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border border-transparent">My Instagram <span class="text-lg inline-block rotate-90">&#64</span></a>
     </div>        
-    
+   <!--Photos Of Me For The Background--> 
     <img src="ikoy1-removebg-preview.png" class="w-full">
 
 
